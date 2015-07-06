@@ -5,3 +5,6 @@ disable:
 
 development_dependencies:
   rubygems-tasks: ~> 0.2
+
+variables:
+  gem_tasks: rubygems-tasks
