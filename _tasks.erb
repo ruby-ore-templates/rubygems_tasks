@@ -1,7 +1,7 @@
 begin
   require 'rubygems/tasks'
-  Gem::Tasks.new(sign: {checksum: true, pgp: true},
-    build: {tar: true}, scm: {status: true}) do |tasks|
+  Gem::Tasks.new(sign: {checksum: true, pgp: true}, 
+    scm: {status: true}) do |tasks|
   tasks.console.command = 'pry'
 end
 rescue LoadError => e
